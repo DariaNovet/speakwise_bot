@@ -9,7 +9,7 @@ import difflib
 import speech_recognition as sr
 
 # ТОКЕН СЮДА (вставь свой из BotFather)
-TOKEN = "7636052400:AAEVH-BNqkSgpVbRUKibqG5j41cAxVStq9M"
+TOKEN = "8616377232:AAGfTmBBylfJiR92lO_u4Fm1gDN9sFFxlVA"
 
 bot = telebot.TeleBot(TOKEN)
 
