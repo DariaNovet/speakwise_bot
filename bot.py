@@ -122,6 +122,6 @@ def handle_voice(message):
     except Exception as e:
         bot.reply_to(message, f"❌ Ошибка: {e}")
 
-if name == 'main':
+if__name__== __'main__:
     print("Бот запущен...")
     bot.polling(none_stop=True)
