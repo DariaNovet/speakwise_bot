@@ -13,6 +13,7 @@ TOKEN = "8616377232:AAGfTmBBylfJiR92lO_u4Fm1gDN9sFFxlVA"
 
 bot = telebot.TeleBot(TOKEN)
 bot.remove_webhook()
+
 # Хранилище данных пользователей
 user_data = {}
 
