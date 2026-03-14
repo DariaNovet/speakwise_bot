@@ -1,9 +1,7 @@
 pyTelegramBotAPI==4.14.0
-requests==2.31.0
 gTTS==2.3.2
 fpdf==1.7.2
 SpeechRecognition==3.10.0
 pydub==0.25.1
-python-docx==0.8.11
-PyPDF2==3.0.1
-python-pptx==0.6.21
+requests==2.31.0
+ffmpeg-python==0.2.0
