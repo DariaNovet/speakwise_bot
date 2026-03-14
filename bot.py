@@ -9,7 +9,9 @@ from collections import defaultdict
 import speech_recognition as sr
 from pydub import AudioSegment
 import difflib
-
+from fpdf import FPDF
+import tempfile
+import os
 # ========== НАСТРОЙКИ ==========
 TOKEN = "8616377232:AAGfTmBBylfJiR92lO_u4Fm1gDN9sFFxlVA"
 bot = telebot.TeleBot(TOKEN)
@@ -683,6 +685,45 @@ def choose_topic_level(message):
         text_errors_mode(message)
 
 # ========== ЗАПУСК ==========
+# ========== ГЕНЕРАЦИЯ PDF ==========
+@bot.message_handler(func=lambda message: message.text == "📄 Скачать PDF")
+def generate_pdf(message):
+    user_id = message.from_user.id
+    vocab = user_data[user_id]["vocabulary"]
+    
+    if not vocab:
+        bot.send_message(message.chat.id, "📄 Словарь пуст. Сначала добавь слова через «➕ В словарь»")
+        return
+    
+    # Создаём PDF
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Arial", 'B', 16)
+    pdf.cell(200, 10, txt="Мой словарь", ln=True, align='C')
+    pdf.ln(10)
+    
+    # Заголовки
+    pdf.set_font("Arial", 'B', 12)
+    pdf.cell(60, 10, "Слово", 1, 0, 'C')
+    pdf.cell(60, 10, "Перевод", 1, 1, 'C')
+    
+    # Слова
+    pdf.set_font("Arial", '', 12)
+    for item in vocab:
+        pdf.cell(60, 10, item['word'], 1, 0, 'C')
+        pdf.cell(60, 10, item['translation'], 1, 1, 'C')
+    
+    # Сохраняем во временный файл
+    with tempfile.NamedTemporaryFile(delete=False, suffix='.pdf') as tmp:
+        pdf.output(tmp.name)
+        tmp_path = tmp.name
+    
+    # Отправляем пользователю
+    with open(tmp_path, 'rb') as f:
+        bot.send_document(message.chat.id, f, caption="📘 Твой словарь")
+    
+    # Удаляем временный файл
+    os.unlink(tmp_path)
 if __name__ == "__main__":
     print("🤖 БОТ ЗАПУЩЕН")
     bot.infinity_polling()
