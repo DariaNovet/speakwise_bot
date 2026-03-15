@@ -287,8 +287,7 @@ WORD_BASE = {
             {"word": "regular", "translation": "регулярный"}, {"word": "usual", "translation": "обычный"},
             {"word": "typical", "translation": "типичный"}, {"word": "ordinary", "translation": "обыкновенный"}
         ]
-    }
-}
+
     "family": {
         "A1": [
             {"word": "mother", "translation": "мама"}, {"word": "father", "translation": "папа"},
