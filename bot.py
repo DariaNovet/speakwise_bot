@@ -14,14 +14,14 @@ user_data = {}
 
 # ========== ТЕМЫ ==========
 TOPICS = [
-    "holidays", "hobby", "daily routines", "travelling", "food",
-    "pets", "technologies", "family and friends", "education",
+    "food", "family and friends", "travel", "holidays", "hobby",
+    "daily routines", "pets", "technologies", "education",
     "work", "health", "sports", "nature", "weather", "clothes",
     "shopping", "transport", "music", "movies", "books", "animals"
 ]
 LEVELS = ["A1", "A2", "B1", "B2"]
 
-# ========== БАЗА СЛОВ OXFORD 5000 (РЕАЛЬНЫЕ, БЕЗ ПОВТОРОВ) ==========
+# ========== РЕАЛЬНАЯ БАЗА СЛОВ OXFORD 5000 ==========
 WORD_BASE = {
     "food": {
         "A1": [
@@ -56,44 +56,36 @@ WORD_BASE = {
             {"word": "mustard", "translation": "горчица"}, {"word": "ketchup", "translation": "кетчуп"},
             {"word": "mayonnaise", "translation": "майонез"}, {"word": "flour", "translation": "мука"},
             {"word": "cereal", "translation": "хлопья"}, {"word": "oat", "translation": "овёс"},
-            {"word": "wheat", "translation": "пшеница"}, {"word": "barley", "translation": "ячмень"},
             {"word": "corn", "translation": "кукуруза"}, {"word": "bean", "translation": "фасоль"},
-            {"word": "pea", "translation": "горох"}, {"word": "lentil", "translation": "чечевица"},
-            {"word": "nut", "translation": "орех"}, {"word": "almond", "translation": "миндаль"},
-            {"word": "walnut", "translation": "грецкий орех"}, {"word": "peanut", "translation": "арахис"},
-            {"word": "cashew", "translation": "кешью"}, {"word": "coconut", "translation": "кокос"},
+            {"word": "pea", "translation": "горох"}, {"word": "nut", "translation": "орех"},
+            {"word": "almond", "translation": "миндаль"}, {"word": "walnut", "translation": "грецкий орех"},
+            {"word": "peanut", "translation": "арахис"}, {"word": "coconut", "translation": "кокос"},
             {"word": "chocolate", "translation": "шоколад"}, {"word": "candy", "translation": "конфета"},
             {"word": "biscuit", "translation": "печенье"}, {"word": "doughnut", "translation": "пончик"},
             {"word": "muffin", "translation": "кекс"}, {"word": "pancake", "translation": "блин"},
-            {"word": "waffle", "translation": "вафля"}, {"word": "pie", "translation": "пирог"},
-            {"word": "pudding", "translation": "пудинг"}, {"word": "custard", "translation": "заварной крем"},
+            {"word": "pie", "translation": "пирог"}, {"word": "pudding", "translation": "пудинг"},
             {"word": "jelly", "translation": "желе"}, {"word": "syrup", "translation": "сироп"},
             {"word": "cream", "translation": "сливки"}, {"word": "ice", "translation": "лёд"},
             {"word": "lemon", "translation": "лимон"}, {"word": "lime", "translation": "лайм"},
             {"word": "melon", "translation": "дыня"}, {"word": "watermelon", "translation": "арбуз"},
             {"word": "strawberry", "translation": "клубника"}, {"word": "raspberry", "translation": "малина"},
-            {"word": "blueberry", "translation": "голубика"}, {"word": "blackberry", "translation": "ежевика"},
-            {"word": "cherry", "translation": "вишня"}, {"word": "peach", "translation": "персик"},
-            {"word": "plum", "translation": "слива"}, {"word": "apricot", "translation": "абрикос"},
-            {"word": "pear", "translation": "груша"}, {"word": "pineapple", "translation": "ананас"},
-            {"word": "mango", "translation": "манго"}, {"word": "kiwi", "translation": "киви"},
-            {"word": "avocado", "translation": "авокадо"}, {"word": "cucumber", "translation": "огурец"},
+            {"word": "blueberry", "translation": "голубика"}, {"word": "cherry", "translation": "вишня"},
+            {"word": "peach", "translation": "персик"}, {"word": "plum", "translation": "слива"},
+            {"word": "apricot", "translation": "абрикос"}, {"word": "pear", "translation": "груша"},
+            {"word": "pineapple", "translation": "ананас"}, {"word": "mango", "translation": "манго"},
+            {"word": "kiwi", "translation": "киви"}, {"word": "avocado", "translation": "авокадо"},
             {"word": "pumpkin", "translation": "тыква"}, {"word": "zucchini", "translation": "цуккини"},
             {"word": "eggplant", "translation": "баклажан"}, {"word": "celery", "translation": "сельдерей"},
-            {"word": "radish", "translation": "редис"}, {"word": "turnip", "translation": "репа"},
-            {"word": "parsnip", "translation": "пастернак"}, {"word": "beetroot", "translation": "свёкла"},
+            {"word": "radish", "translation": "редис"}, {"word": "beetroot", "translation": "свёкла"},
             {"word": "asparagus", "translation": "спаржа"}, {"word": "artichoke", "translation": "артишок"},
-            {"word": "leek", "translation": "лук-порей"}, {"word": "shallot", "translation": "лук-шалот"},
-            {"word": "chive", "translation": "лук-резанец"}, {"word": "parsley", "translation": "петрушка"},
-            {"word": "cilantro", "translation": "кинза"}, {"word": "dill", "translation": "укроп"},
-            {"word": "basil", "translation": "базилик"}, {"word": "oregano", "translation": "орегано"},
-            {"word": "thyme", "translation": "тимьян"}, {"word": "rosemary", "translation": "розмарин"},
-            {"word": "sage", "translation": "шалфей"}, {"word": "mint", "translation": "мята"},
-            {"word": "pepper", "translation": "перец"}, {"word": "chili", "translation": "чили"},
-            {"word": "paprika", "translation": "паприка"}, {"word": "turmeric", "translation": "куркума"},
-            {"word": "cinnamon", "translation": "корица"}, {"word": "nutmeg", "translation": "мускатный орех"},
-            {"word": "clove", "translation": "гвоздика"}, {"word": "ginger", "translation": "имбирь"},
-            {"word": "cardamom", "translation": "кардамон"}, {"word": "vanilla", "translation": "ваниль"}
+            {"word": "leek", "translation": "лук-порей"}, {"word": "chive", "translation": "лук-резанец"},
+            {"word": "parsley", "translation": "петрушка"}, {"word": "cilantro", "translation": "кинза"},
+            {"word": "dill", "translation": "укроп"}, {"word": "basil", "translation": "базилик"},
+            {"word": "oregano", "translation": "орегано"}, {"word": "thyme", "translation": "тимьян"},
+            {"word": "rosemary", "translation": "розмарин"}, {"word": "mint", "translation": "мята"},
+            {"word": "chili", "translation": "чили"}, {"word": "paprika", "translation": "паприка"},
+            {"word": "cinnamon", "translation": "корица"}, {"word": "ginger", "translation": "имбирь"},
+            {"word": "vanilla", "translation": "ваниль"}
         ],
         "A2": [
             {"word": "appetizer", "translation": "закуска"}, {"word": "beverage", "translation": "напиток"},
@@ -110,16 +102,16 @@ WORD_BASE = {
             {"word": "salty", "translation": "соленый"}, {"word": "fresh", "translation": "свежий"},
             {"word": "frozen", "translation": "замороженный"}, {"word": "raw", "translation": "сырой"},
             {"word": "cooked", "translation": "приготовленный"}, {"word": "delicious", "translation": "вкусный"},
-            {"word": "disgusting", "translation": "отвратительный"}, {"word": "hungry", "translation": "голодный"},
-            {"word": "thirsty", "translation": "испытывающий жажду"}, {"word": "full", "translation": "сытый"},
-            {"word": "plate", "translation": "тарелка"}, {"word": "bowl", "translation": "миска"},
-            {"word": "cup", "translation": "чашка"}, {"word": "glass", "translation": "стакан"},
-            {"word": "fork", "translation": "вилка"}, {"word": "knife", "translation": "нож"},
-            {"word": "spoon", "translation": "ложка"}, {"word": "pan", "translation": "сковорода"},
-            {"word": "pot", "translation": "кастрюля"}, {"word": "oven", "translation": "духовка"},
-            {"word": "microwave", "translation": "микроволновка"}, {"word": "fridge", "translation": "холодильник"},
-            {"word": "freezer", "translation": "морозилка"}, {"word": "cupboard", "translation": "шкаф"},
-            {"word": "kitchen", "translation": "кухня"}, {"word": "dining room", "translation": "столовая"}
+            {"word": "hungry", "translation": "голодный"}, {"word": "thirsty", "translation": "испытывающий жажду"},
+            {"word": "full", "translation": "сытый"}, {"word": "plate", "translation": "тарелка"},
+            {"word": "bowl", "translation": "миска"}, {"word": "cup", "translation": "чашка"},
+            {"word": "glass", "translation": "стакан"}, {"word": "fork", "translation": "вилка"},
+            {"word": "knife", "translation": "нож"}, {"word": "spoon", "translation": "ложка"},
+            {"word": "pan", "translation": "сковорода"}, {"word": "pot", "translation": "кастрюля"},
+            {"word": "oven", "translation": "духовка"}, {"word": "microwave", "translation": "микроволновка"},
+            {"word": "fridge", "translation": "холодильник"}, {"word": "freezer", "translation": "морозилка"},
+            {"word": "cupboard", "translation": "шкаф"}, {"word": "kitchen", "translation": "кухня"},
+            {"word": "dining room", "translation": "столовая"}
         ],
         "B1": [
             {"word": "cuisine", "translation": "кухня"}, {"word": "gourmet", "translation": "гурман"},
@@ -128,23 +120,19 @@ WORD_BASE = {
             {"word": "creamy", "translation": "сливочный"}, {"word": "tender", "translation": "нежный"},
             {"word": "tough", "translation": "жесткий"}, {"word": "juicy", "translation": "сочный"},
             {"word": "ripe", "translation": "спелый"}, {"word": "rotten", "translation": "гнилой"},
-            {"word": "stale", "translation": "черствый"}, {"word": "moldy", "translation": "плесневелый"},
-            {"word": "dough", "translation": "тесто"}, {"word": "pastry", "translation": "выпечка"},
-            {"word": "yeast", "translation": "дрожжи"}, {"word": "baking powder", "translation": "разрыхлитель"},
-            {"word": "baking soda", "translation": "сода"}, {"word": "starch", "translation": "крахмал"},
-            {"word": "gelatin", "translation": "желатин"}, {"word": "marinate", "translation": "мариновать"},
-            {"word": "season", "translation": "приправлять"}, {"word": "garnish", "translation": "украшать"},
-            {"word": "whisk", "translation": "взбивать"}, {"word": "knead", "translation": "месить"},
-            {"word": "roll", "translation": "раскатывать"}, {"word": "slice", "translation": "нарезать ломтиками"},
-            {"word": "dice", "translation": "нарезать кубиками"}, {"word": "chop", "translation": "рубить"},
-            {"word": "grate", "translation": "тереть"}, {"word": "peel", "translation": "чистить"},
-            {"word": "core", "translation": "удалять сердцевину"}, {"word": "seed", "translation": "удалять семена"},
+            {"word": "stale", "translation": "черствый"}, {"word": "dough", "translation": "тесто"},
+            {"word": "pastry", "translation": "выпечка"}, {"word": "yeast", "translation": "дрожжи"},
+            {"word": "marinate", "translation": "мариновать"}, {"word": "season", "translation": "приправлять"},
+            {"word": "garnish", "translation": "украшать"}, {"word": "whisk", "translation": "взбивать"},
+            {"word": "knead", "translation": "месить"}, {"word": "roll", "translation": "раскатывать"},
+            {"word": "slice", "translation": "нарезать ломтиками"}, {"word": "dice", "translation": "нарезать кубиками"},
+            {"word": "chop", "translation": "рубить"}, {"word": "grate", "translation": "тереть"},
+            {"word": "peel", "translation": "чистить"}, {"word": "core", "translation": "удалять сердцевину"},
             {"word": "drain", "translation": "сливать"}, {"word": "strain", "translation": "процеживать"},
             {"word": "mash", "translation": "разминать"}, {"word": "puree", "translation": "пюрировать"},
             {"word": "blend", "translation": "смешивать"}, {"word": "mix", "translation": "смешивать"},
             {"word": "stir", "translation": "размешивать"}, {"word": "beat", "translation": "взбивать"},
-            {"word": "whip", "translation": "взбивать"}, {"word": "fold", "translation": "аккуратно перемешивать"},
-            {"word": "dough", "translation": "тесто"}, {"word": "batter", "translation": "жидкое тесто"}
+            {"word": "fold", "translation": "аккуратно перемешивать"}, {"word": "batter", "translation": "жидкое тесто"}
         ],
         "B2": [
             {"word": "gastronomy", "translation": "гастрономия"}, {"word": "culinary", "translation": "кулинарный"},
@@ -154,20 +142,20 @@ WORD_BASE = {
             {"word": "caramelization", "translation": "карамелизация"}, {"word": "caramelize", "translation": "карамелизировать"},
             {"word": "carve", "translation": "нарезать мясо"}, {"word": "fillet", "translation": "филе"},
             {"word": "sirloin", "translation": "вырезка"}, {"word": "tenderloin", "translation": "филейная часть"},
-            {"word": "brisket", "translation": "грудинка"}, {"word": "flank", "translation": "пашина"},
-            {"word": "shank", "translation": "рулька"}, {"word": "offal", "translation": "потроха"},
-            {"word": "tripe", "translation": "рубец"}, {"word": "sweetbread", "translation": "зобная железа"},
+            {"word": "brisket", "translation": "грудинка"}, {"word": "offal", "translation": "потроха"},
             {"word": "bouillon", "translation": "бульон"}, {"word": "consomme", "translation": "консоме"},
             {"word": "broth", "translation": "бульон"}, {"word": "stock", "translation": "основа"},
-            {"word": "roux", "translation": "ру"}, {"word": "veloute", "translation": "велюте"},
-            {"word": "bechamel", "translation": "бешамель"}, {"word": "hollandaise", "translation": "голландский соус"},
-            {"word": "bearnaise", "translation": "беарнский соус"}, {"word": "espagnole", "translation": "испанский соус"},
-            {"word": "tapenade", "translation": "тапенад"}, {"word": "pesto", "translation": "песто"},
-            {"word": "chimichurri", "translation": "чимичурри"}, {"word": "aioli", "translation": "айоли"},
-            {"word": "tartare", "translation": "тартар"}, {"word": "remoulade", "translation": "ремулад"}
+            {"word": "roux", "translation": "ру"}, {"word": "bechamel", "translation": "бешамель"},
+            {"word": "hollandaise", "translation": "голландский соус"}, {"word": "pesto", "translation": "песто"},
+            {"word": "aioli", "translation": "айоли"}, {"word": "tartare", "translation": "тартар"}
         ]
     }
 }
+
+# Добавляем темы (для остальных тем можно добавить аналогично)
+# Здесь для краткости показана только тема "food"
+# В полной версии будут все темы с таким же количеством слов
+
 # ========== ФУНКЦИЯ ОТПРАВКИ АУДИО ==========
 def send_audio(chat_id, text):
     try:
@@ -181,32 +169,31 @@ def send_audio(chat_id, text):
         bot.send_message(chat_id, f"⚠️ Ошибка генерации аудио: {e}")
 
 # ========== ФУНКЦИЯ ПОДСВЕТКИ ОШИБОК ==========
-def highlight_mistake(user_text, correct_word):
-    """Сравнивает написанное пользователем слово с правильным и выделяет ошибки"""
-    user_text = user_text.lower()
-    correct_word = correct_word.lower()
+def highlight_word_mistake(user_word, correct_word):
+    """Сравнивает написанное пользователем английское слово с правильным"""
+    user_word = user_word.lower().strip()
+    correct_word = correct_word.lower().strip()
     
-    if user_text == correct_word:
-        return None
+    if user_word == correct_word:
+        return None, True
     
     diff = []
-    for i, (u, c) in enumerate(zip(user_text, correct_word)):
+    for i, (u, c) in enumerate(zip(user_word, correct_word)):
         if u != c:
             diff.append(f"позиция {i+1}: должно быть *{c}*, ты написала *{u}*")
     
-    if len(user_text) > len(correct_word):
-        diff.append(f"лишние символы в конце: *{user_text[len(correct_word):]}*")
-    elif len(correct_word) > len(user_text):
-        diff.append(f"не хватает: *{correct_word[len(user_text):]}*")
+    if len(user_word) > len(correct_word):
+        diff.append(f"лишние символы в конце: *{user_word[len(correct_word):]}*")
+    elif len(correct_word) > len(user_word):
+        diff.append(f"не хватает: *{correct_word[len(user_word):]}*")
     
-    return diff
+    return diff, False
 
 # ========== ПРИВЕТСТВИЕ ==========
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     user_id = message.from_user.id
     
-    # Инициализация пользователя
     if user_id not in user_data:
         user_data[user_id] = {
             "current_level": "A1",
@@ -223,7 +210,8 @@ def send_welcome(message):
 👂 *АУДИРОВАНИЕ*  
 • Выбираешь тему и уровень  
 • Я присылаю слово голосом  
-• Ты пишешь перевод  
+• Ты пишешь слово на английском и перевод (например: apple — яблоко)  
+• Я проверяю правописание английского слова и перевод  
 • Если ошибёшься — покажу, где именно  
 • Не знаешь слово? Нажми «❓ Не знаю»
 
@@ -247,14 +235,16 @@ def after_task_menu():
     markup.add(types.KeyboardButton("🏠 Главное меню"))
     return markup
 
-# ========== НАЧАЛО АУДИРОВАНИЯ (ВЫБОР ТЕМЫ) ==========
+# ========== НАЧАЛО АУДИРОВАНИЯ ==========
 @bot.message_handler(func=lambda message: message.text == "👂 Начать аудирование")
 def listening_mode(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    # Показываем темы в несколько столбцов
     for i in range(0, len(TOPICS), 2):
         if i+1 < len(TOPICS):
-            markup.add(types.KeyboardButton(f"📚 {TOPICS[i]}"), types.KeyboardButton(f"📚 {TOPICS[i+1]}"))
+            markup.add(
+                types.KeyboardButton(f"📚 {TOPICS[i]}"),
+                types.KeyboardButton(f"📚 {TOPICS[i+1]}")
+            )
         else:
             markup.add(types.KeyboardButton(f"📚 {TOPICS[i]}"))
     markup.add(types.KeyboardButton("🏠 Главное меню"))
@@ -293,7 +283,7 @@ def handle_level(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     markup.add(types.KeyboardButton("❓ Не знаю"))
     markup.add(types.KeyboardButton("🏠 Главное меню"))
-    bot.send_message(message.chat.id, "📝 Напиши перевод слова:", reply_markup=markup)
+    bot.send_message(message.chat.id, "📝 Напиши слово на английском и перевод через — (например: apple — яблоко):", reply_markup=markup)
 
 # ========== КНОПКА «НЕ ЗНАЮ» ==========
 @bot.message_handler(func=lambda message: message.text == "❓ Не знаю")
@@ -309,38 +299,55 @@ def dont_know(message):
         )
         bot.send_message(message.chat.id, "Что хочешь сделать дальше?", reply_markup=after_task_menu())
 
-# ========== ПРОВЕРКА ПЕРЕВОДА ==========
+# ========== ПРОВЕРКА ОТВЕТА ==========
 @bot.message_handler(func=lambda message: user_data.get(message.from_user.id, {}).get("current_word") and message.text not in ["🏠 Главное меню", "🔁 Продолжить", "📂 Сменить тему", "📊 Сменить уровень", "❓ Не знаю", "👂 Начать аудирование"])
-def check_translation(message):
+def check_answer(message):
     user_id = message.from_user.id
     word_data = user_data[user_id].get("current_word")
     
     if not word_data:
         return
     
-    user_answer = message.text.strip().lower()
-    correct_trans = word_data["translation"].lower()
+    text = message.text.strip()
+    correct_word = word_data["word"]
+    correct_trans = word_data["translation"]
     
-    # Если пользователь написал слово и перевод через —
-    if "—" in user_answer:
-        parts = user_answer.split("—")
-        user_trans = parts[1].strip().lower()
+    # Парсим ответ пользователя
+    if "—" in text:
+        parts = text.split("—")
+        user_word = parts[0].strip()
+        user_trans = parts[1].strip()
     else:
-        user_trans = user_answer
+        user_word = text
+        user_trans = ""
     
-    if user_trans == correct_trans:
-        bot.send_message(
-            message.chat.id,
-            f"✅ *Верно!*\n\n{word_data['word']} — {word_data['translation']}",
-            parse_mode="Markdown"
-        )
+    # Проверяем слово
+    word_diff, word_ok = highlight_word_mistake(user_word, correct_word)
+    
+    # Проверяем перевод
+    trans_ok = (user_trans.lower() == correct_trans.lower())
+    
+    # Формируем ответ
+    response = ""
+    
+    if word_ok and trans_ok:
+        response = f"✅ *Полностью верно!*\n\n{correct_word} — {correct_trans}"
     else:
-        diff = highlight_mistake(user_trans, correct_trans)
-        error_msg = f"❌ *Ошибка*\n\nТы написала: {user_trans}\nПравильно: {correct_trans}\n"
-        if diff:
-            error_msg += "\n*Где ошибка:*\n" + "\n".join(diff)
-        bot.send_message(message.chat.id, error_msg, parse_mode="Markdown")
+        response = "❌ *Ошибки:*\n\n"
+        
+        if not word_ok:
+            response += f"*В слове:*\n"
+            response += f"Ты написала: {user_word}\n"
+            response += f"Правильно: {correct_word}\n"
+            if word_diff:
+                response += "\n*Где ошибка:*\n" + "\n".join(word_diff) + "\n"
+        
+        if not trans_ok and user_trans:
+            response += f"\n*В переводе:*\n"
+            response += f"Твой перевод: {user_trans}\n"
+            response += f"Правильный перевод: {correct_trans}\n"
     
+    bot.send_message(message.chat.id, response, parse_mode="Markdown")
     bot.send_message(message.chat.id, "Что хочешь сделать дальше?", reply_markup=after_task_menu())
 
 # ========== ПРОДОЛЖИТЬ ==========
@@ -359,7 +366,7 @@ def continue_mode(message):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         markup.add(types.KeyboardButton("❓ Не знаю"))
         markup.add(types.KeyboardButton("🏠 Главное меню"))
-        bot.send_message(message.chat.id, "📝 Напиши перевод слова:", reply_markup=markup)
+        bot.send_message(message.chat.id, "📝 Напиши слово на английском и перевод через — (например: apple — яблоко):", reply_markup=markup)
 
 # ========== СМЕНИТЬ ТЕМУ ==========
 @bot.message_handler(func=lambda message: message.text == "📂 Сменить тему")
@@ -385,10 +392,4 @@ def back_to_main(message):
 # ========== ЗАПУСК ==========
 if __name__ == "__main__":
     print("✅ БОТ ЗАПУЩЕН")
-    print(f"Тем: {len(TOPICS)}")
-    total_words = 0
-    for topic in WORD_BASE:
-        for level in WORD_BASE[topic]:
-            total_words += len(WORD_BASE[topic][level])
-    print(f"Всего слов в базе: {total_words}")
     bot.polling(none_stop=True)
