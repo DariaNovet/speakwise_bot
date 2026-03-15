@@ -6,7 +6,7 @@ from telebot import types
 from gtts import gTTS
 import difflib
 
-TOKEN = "8616377232:AAGfTmBVjfJIR92lO_u4Fm1gDN9sFFxIVA"
+TOKEN = "8616377232:AAGfTmBBylfJiR92lO_u4Fm1gDN9sFFxlVA"
 bot = telebot.TeleBot(TOKEN)
 
 # ========== БАЗА ДАННЫХ ПОЛЬЗОВАТЕЛЕЙ ==========
